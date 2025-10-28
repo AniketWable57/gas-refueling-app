@@ -23,7 +23,7 @@ const Report = ({ transactions, gasPrice, serviceCharge, onClose }) => {
     <div id="print-report" ref={reportRef}>
       <div className="report-container">
         <div className="report-header">
-          <h1 className="report-title">Gas Mediator - Kalpana Wable</h1>
+          <h1 className="report-title">Gas  Mediator - Kalpana Wable</h1>
           <p className="report-subtitle">Your trusted gas service intermediary</p>
           <p className="report-date">Generated on: {new Date().toLocaleDateString()}</p>
         </div>
