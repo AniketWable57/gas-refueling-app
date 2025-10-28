@@ -1,3 +1,4 @@
+// public/sw.js
 const CACHE_NAME = 'gas-mediator-v1';
 const urlsToCache = [
   '/',
@@ -24,4 +25,11 @@ self.addEventListener('fetch', (event) => {
       }
     )
   );
+});
+
+// Skip waiting message for updates
+self.addEventListener('message', (event) => {
+  if (event.data && event.data.type === 'SKIP_WAITING') {
+    self.skipWaiting();
+  }
 });
